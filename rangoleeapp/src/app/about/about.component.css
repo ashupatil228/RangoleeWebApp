@@ -1,0 +1,22 @@
+.aboutus{
+    background-image: url("assets/images/about.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	background-size: cover;
+	width: auto;
+    height: auto;
+    max-width: 100%;
+	background-position: center center;
+	position: relative;
+    font-style: oblique;
+    font-size:0.40in;
+    font-weight: bold;
+    align-items: center;
+    padding: 10pc;
+}
+
+h1{
+    font-family:Tempus Sans  ITC;
+    color:lavenderblush;
+    text-align: center;
+}

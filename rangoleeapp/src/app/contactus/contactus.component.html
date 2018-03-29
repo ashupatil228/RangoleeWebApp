@@ -1,0 +1,44 @@
+<div>
+
+  <div class="row mx-auto" style="font-family: Book Antiqua;">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5">
+        <img style="height:19pc;width:30pc" src="assets/images/reserve.jpg">
+      </div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-sm-9">
+          <div>
+            <div class="col-sm-12">
+              <h4 style="font-family: Tempus Sans ITC; text-decoration: underline; text-align:center">Contact Us</h4>
+              </div>
+
+            <div class="col-sm-12  m-3">
+              <form [formGroup]="form" (ngSubmit)="sendEmail()">
+                <div class="row pt-4">
+                  <label class="col-sm-3" for="name">Full Name:</label>
+                  <input class="col-sm-8" type="text" name="name" placeholder="Enter your name" formControlName="name">
+                </div>
+                <div class="row pt-4">
+                  <label class="col-sm-3" for="email">Email Address:</label>
+                  <input class="col-sm-8" type="email" name="email" placeholder="youremail@mail.com" formControlName="email">
+                </div>
+                <div class="row pt-4">
+                  <label class="col-sm-3">Message:</label>
+                  <textarea class="col-sm-8" input type="text" rows="3" placeholder="write your message" name="message" formControlName="message"></textarea>
+                </div>
+                <br>
+                <div class="text-center">
+                  <button type="button" class="btn btn-dark" type="submit" [disabled]="form.invalid">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<br>
+<br>
