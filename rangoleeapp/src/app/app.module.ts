@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule  } from 'angularfire2/database';
 import { routing } from './app.routing';
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
@@ -29,7 +30,9 @@ import { WINDOW_PROVIDERS } from './services/window.service';
     ReactiveFormsModule,
     routing,
     BrowserAnimationsModule,
-    HttpModule
+    HttpModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule, // for database
   ],
   providers: [
     WINDOW_PROVIDERS

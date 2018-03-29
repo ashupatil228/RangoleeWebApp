@@ -1,13 +1,3 @@
-
-.modal-dialog {
-    width: 100%;
-    height: 95%;
-    padding: 0;
-    margin:20;
-}
-.modal-content {    
-    overflow:auto;
-}
 .background{
     background-image: url("assets/images/back.jpg");
     background-attachment: fixed;
@@ -18,9 +8,4 @@
     max-width: 100%;
 	background-position: center center;
 	position: relative;
-}
-.navbar-nav
-{
-  margin-left:33%;
-  position: fixed;
 }
